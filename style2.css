@@ -1,0 +1,121 @@
+.box7>.tim,
+.box7>.tim>.agoo,
+.box7>.tim>.agoo>.dtll,
+.box7>.tim>.agoo>.dtll>.purt,
+.box7>.tim>.agoo>.dtll>.purt>.ttx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bx1 {
+    background-image: url("./img/i2.jpg");
+    background-position: center;
+
+}
+
+.box7 {
+    background-image: url("./img/i4.jpg");
+    justify-content: flex-start;
+}
+
+.box7>.tim {
+    width: calc(100% - 20px);
+    margin: 0 20px;
+    gap: 10px;
+
+}
+
+.box7>.tim>.agoo {
+    width: 100%;
+    gap: 2px;
+    align-items: flex-start;
+}
+
+.box7>.tim>.agoo>p {
+    font-size: 25px;
+    margin: 5px 0;
+    color:transparent;
+    font-weight: 600;
+    background:linear-gradient(rgb(255, 255, 255),rgb(45, 45, 45));
+    background-clip: text;
+}
+
+.box7>.tim>.agoo>.dtll {
+    width: calc(100% - 60px);
+    flex-direction: row;
+    gap: 5px;
+    justify-content: flex-start;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px 30px
+}
+
+.box7>.tim>.agoo>.dtll::-webkit-scrollbar {
+    height: 1px;
+    background: white;
+}
+
+.box7>.tim>.agoo>.dtll::-webkit-scrollbar-thumb {
+    background: rgb(92, 92, 92);
+}
+
+.box7>.tim>.agoo>.dtll>.purt {
+    transition: .2s ease;
+    padding: 20px;
+    min-width: 400px;
+    min-height: 150px;
+    flex-direction: row;
+    background-color: rgba(84, 84, 84, 0.265);
+    gap: 15px;
+    border-radius: 5px;
+}
+.box7>.tim>.agoo>.dtll>.purt:hover{
+    background-color: rgba(79, 79, 79, 0.474);
+}
+.box7>.tim>.agoo>.dtll>.purt>img {
+    transition: .2s ease;
+    width: 60px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius:50% 30% 40% 60% ;
+}
+.box7>.tim>.agoo>.dtll>.purt:hover>img {
+     border-radius: 40% 60% 50% 30%   ;
+}
+.box7>.tim>.agoo>.dtll>.purt>.ttx {
+    gap:5px;
+    align-items: flex-start;
+    width: calc(100% - 70px);
+}
+
+.box7>.tim>.agoo>.dtll>.purt>.ttx>b {
+    color: rgb(255, 251, 243)
+}
+
+.box7>.tim>.agoo>.dtll>.purt>.ttx>p {
+    margin:0;
+    color: rgb(172, 172, 172)
+}
+
+/* 
+.box7>.tim>.agoo,
+.box7>.tim>.agoo>.dtll,
+.box7>.tim>.agoo>.dtll>.purt */
+/* <div class="tim">
+            <div class="agoo">
+                <p></p>
+                <div class="dtll">
+                    <div class="purt">
+                        <b>500 CE – Invention of Zero</b>
+                        <p>Indian mathematician <b>Aryabhata</b> introduced the concept of zero, revolutionizing
+                            mathematics forever.</p>
+                    </div>
+                </div>
+            </div>
+        </div> */
+
+.box8 {
+    background-image: url("./img/i8.jpg");
+}
