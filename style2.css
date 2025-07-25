@@ -2,7 +2,9 @@
 .box7>.tim>.agoo,
 .box7>.tim>.agoo>.dtll,
 .box7>.tim>.agoo>.dtll>.purt,
-.box7>.tim>.agoo>.dtll>.purt>.ttx {
+.box7>.tim>.agoo>.dtll>.purt>.ttx,
+.box8>.rnks,
+.box8>.rnks>.txtprt{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,9 +38,9 @@
 .box7>.tim>.agoo>p {
     font-size: 25px;
     margin: 5px 0;
-    color:transparent;
+    color: transparent;
     font-weight: 600;
-    background:linear-gradient(rgb(255, 255, 255),rgb(45, 45, 45));
+    background: linear-gradient(rgb(255, 255, 255), rgb(45, 45, 45));
     background-clip: text;
 }
 
@@ -71,21 +73,25 @@
     gap: 15px;
     border-radius: 5px;
 }
-.box7>.tim>.agoo>.dtll>.purt:hover{
+
+.box7>.tim>.agoo>.dtll>.purt:hover {
     background-color: rgba(79, 79, 79, 0.474);
 }
+
 .box7>.tim>.agoo>.dtll>.purt>img {
     transition: .2s ease;
     width: 60px;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius:50% 30% 40% 60% ;
+    border-radius: 50% 30% 40% 60%;
 }
+
 .box7>.tim>.agoo>.dtll>.purt:hover>img {
-     border-radius: 40% 60% 50% 30%   ;
+    border-radius: 40% 60% 50% 30%;
 }
+
 .box7>.tim>.agoo>.dtll>.purt>.ttx {
-    gap:5px;
+    gap: 5px;
     align-items: flex-start;
     width: calc(100% - 70px);
 }
@@ -95,27 +101,68 @@
 }
 
 .box7>.tim>.agoo>.dtll>.purt>.ttx>p {
-    margin:0;
+    margin: 0;
     color: rgb(172, 172, 172)
 }
 
-/* 
-.box7>.tim>.agoo,
-.box7>.tim>.agoo>.dtll,
-.box7>.tim>.agoo>.dtll>.purt */
-/* <div class="tim">
-            <div class="agoo">
-                <p></p>
-                <div class="dtll">
-                    <div class="purt">
-                        <b>500 CE – Invention of Zero</b>
-                        <p>Indian mathematician <b>Aryabhata</b> introduced the concept of zero, revolutionizing
-                            mathematics forever.</p>
-                    </div>
-                </div>
-            </div>
-        </div> */
-
 .box8 {
     background-image: url("./img/i8.jpg");
+    justify-content: flex-start;
+}
+
+.box8>.rnks {
+    width: calc(100% - 30px);
+    margin: 0 15px 30px 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.box8>.rnks>.txtprt {
+    transition: .2s ease;
+    position: relative;
+    background-color: rgba(154, 154, 154, 0.133);
+    flex-direction: row;
+    padding:10px 20px;
+    width:350px;
+    border-radius: 10px;
+    border:1px solid rgba(95, 95, 95, 0.176);
+    height:100px;
+    gap:20px;
+}
+.box8>.rnks>.txtprt:hover{
+    background-color: rgba(154, 154, 154, 0.25);
+}
+
+.box8>.rnks>.txtprt>img {
+    transition: .2s ease;
+    width:70px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    object-fit: cover;
+    left: 17px;
+    border-radius: 5px;
+
+}
+.box8>.rnks>.txtprt:hover>img{
+    border-radius: 50px;
+    filter: brightness(.3);
+}
+.box8>.rnks>.txtprt>.peux{
+    text-align: center;
+    z-index: 1;
+    min-width:60px;
+    flex-direction: row;
+    font-size: 20px;
+    margin:0;
+    text-shadow: 0px 0px 5px rgb(4, 4, 4);
+}
+
+.box8>.rnks>.txtprt:hover>.peux{
+    color:rgb(255, 98, 0);
+}
+.box8>.rnks>.txtprt>.puu {
+    margin:0;
+    color:rgb(194, 194, 194);
+
 }

@@ -59,15 +59,17 @@ a {
 }
 
 body>div>h1 {
-    background: linear-gradient(45deg, orange, white, green);
+    background: linear-gradient(45deg, rgb(255, 227, 174), white, rgb(202, 255, 202));
     background-clip: text;
     color: rgba(0, 0, 0, 0);
     margin:50px 0;
 }
 
 .box1>header {
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.719);
+    position: fixed;
     top: 0;
+    z-index: 2;
     overflow: hidden;
     flex-direction: row;
     justify-content: space-between;
@@ -507,7 +509,9 @@ span {
     gap: 8px;
     border-radius: 10px;
 }
-
+.inpbox:hover{
+    background-color: rgba(254, 254, 254, 0.154);
+}
 .inpbox>h1 {
     color: orangered;
 }
